@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
 }
 
 // Replace with your Web App URL
-$WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxXUIVZ8me3ruTsi_g_EPQ9H7-dtMH71ghqjqmdmYHvGZCEsuVn7ejLEXcAGox9uK-3/exec";
+$WEB_APP_URL = "https://script.google.com/macros/s/AKfycbwK7ENGKuk9xM2tRRPU4009DXgX81e9J-87y6sh7RJLD7ggqVBuuQYASP7duAs3fadz/exec";
 
 try {
     // Read JSON input
