@@ -1,20 +1,9 @@
 <?php
 
 // Enable CORS
-$allowed_origins = [
-    "https://www.marvellousmilestone.com",
-    "https://marvellousmilestone.com",
-	"http://localhost:5173/"
-];
-
-if (isset($_SERVER['HTTP_ORIGIN']) && in_array($_SERVER['HTTP_ORIGIN'], $allowed_origins)) {
-    header("Access-Control-Allow-Origin: " . $_SERVER['HTTP_ORIGIN']);
-}
-
+header("Access-Control-Allow-Origin: *"); // For dev, allow all. Replace '*' with your Vue app URL in prod.
 header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
-header("Access-Control-Allow-Headers: Content-Type, Authorization");
-header("Content-Type: application/json");
-header("Access-Control-Allow-Credentials: true");
+header("Access-Control-Allow-Headers: Content-Type");
 
 
 if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
