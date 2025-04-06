@@ -3,7 +3,8 @@
 // Enable CORS
 $allowed_origins = [
     "https://www.marvellousmilestone.com",
-    "https://marvellousmilestone.com"
+    "https://marvellousmilestone.com",
+	"http://localhost:5173/"
 ];
 
 if (isset($_SERVER['HTTP_ORIGIN']) && in_array($_SERVER['HTTP_ORIGIN'], $allowed_origins)) {
